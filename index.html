@@ -8,8 +8,7 @@
     <meta name="description" content="Выигрывай в крупных турнирах после индивидуальных занятий">
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/fonts.css"/>
-    <link rel="stylesheet" href="css/slick.css"/>
-    <link rel="stylesheet" href="js/owlcarousel/owl.carousel.min.css"/>
+     <link rel="stylesheet" href="js/owlcarousel/owl.carousel.min.css"/>
     <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css"/>
     <link rel="stylesheet" href="css/prettyPhoto.css"/>
     <link rel="stylesheet" href="css/all-animation.min.css"/>
@@ -377,71 +376,7 @@
     <script src="js/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script> 
     <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script> 
-    <script src="js/jquery.prettyPhoto.js"></script> 
-
-
-    <script src="js/slick.min.js"></script><!--слайдер-->
-    <script>
-        $(document).on('ready', function() {                
-                $('.slider-text').slick({
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  arrows: false,
-                  dots: true,
-                  asNavFor: '.slider-diagramms',
-                  fade: true,
-                  infinite: false                  
-                });
-                $('.slider-diagramms').slick({
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  asNavFor: '.slider-text',
-                  dots: false,
-                  arrows: true,                  
-                  infinite: false,
-                  focusOnSelect: true
-                }); 
-            
-                $('.programm_slider').slick({
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  arrows: true,
-                  dots: false,
-                  asNavFor: '.carusel',
-                  fade: true,
-                  infinite: true                  
-                });
-                $('.carusel').slick({
-                  slidesToShow: 5,
-                  slidesToScroll: 4,
-                  asNavFor: '.programm_slider',
-                  dots: false,
-                  arrows: false,                  
-                  infinite: true,
-                  focusOnSelect: true
-                }); 
-            
-                $('.reviws_slider').slick({
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  arrows: false,
-                  dots: false,
-                  asNavFor: '.reviws_video-slider',
-                  fade: true,
-                  infinite: true                  
-                });
-                $('.reviws_video-slider').slick({
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  asNavFor: '.reviws_slider',
-                  dots: true,
-                  arrows: true,                  
-                  infinite: true
-                });
-        });
-    </script>
-    
-    
+    <script src="js/jquery.prettyPhoto.js"></script>     
     <script src="js/nariko.js"></script>
     <script src="js/main.js"></script>
 </body>

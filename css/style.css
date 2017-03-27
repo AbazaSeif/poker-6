@@ -2170,59 +2170,5 @@ b-reviews-item__video{
         line-height: 20px;
         height: 160px;
     }
-    
-/*
-    .b-reviews{
-        padding: 35px 0 76px 0;
-	}
-	.b-reviews .b-title span {
-	    left: 45px;
-	}
-	.b-reviews-item{
-		width: 100%;
-	    padding: 0 10px 54px 10px;
-	    position: relative;
-        min-height: 865px;
-	}
-	.b-reviews-content{
-		width: 100%;
-	}
-	.b-reviews-item__video{
-		width: 100%;
-	}
-	.b-reviews-item__cheme{
-		width: 100%;
-		position: relative;	
-		bottom: 0;
-		top: 0;
-	}
-	.b-reviewsl-carousel .owl-nav{
-		top: auto;
-        bottom: 0px;
-	    right: 10px;
-	}
-	.b-reviews-name{
-		position: absolute;
-	    bottom: 0px;
-		width: 198px;
-	}
-	
-	.b-reviews-item__cheme:before{
-		display: none;
-	}
-	.b-reviews .owl-dots{
-	    bottom: -31px;
-	}
 
-	.b-reviews .owl-dot{
-	    margin: 7px 0 0 16px;
-	}
-	.b-reviews .owl-dot:first-child {
-		margin: 7px 0 0 0;
-	}
-	.b-reviews .owl-dots{
-		left: 0;
-		margin: 0;
-	}
-*/
 }
