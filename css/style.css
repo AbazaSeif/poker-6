@@ -58,7 +58,11 @@ h2 {
     left: 0;
     height: 100%;
     overflow: hidden;
-    transition: 2s ease;
+    -webkit-transition: 1.4s ease;
+    -moz-transition: 1.4s ease;
+    -ms-transition: 1.4s ease;
+    -o-transition: 1.4s ease;
+    transition: 1.4s ease;
 }
 .orange.oradge-open span {
     height: 0;
@@ -115,9 +119,9 @@ a{
     background: #dcd1b8;
     position: absolute;
     top: 12px;
-    -webkit-transition: .6s ease;
-    -o-transition: .6s ease;
-    transition: .6s ease;
+    -webkit-transition: 1.2s ease;
+    -o-transition: 1.2s ease;
+    transition: 1.2s ease;
 }
 .decor.line:before,
 .decor.line:after{
@@ -654,9 +658,9 @@ button{
     background: #c0a977;
     left: 0;
     bottom: 0;
-    -webkit-transition: .6s ease;
-    -o-transition: .6s ease;
-    transition: .6s ease;
+    -webkit-transition: 1.2s ease;
+    -o-transition: 1.2s ease;
+    transition: 1.2s ease;
 }
 .sec-4_text h2.line:after{
     width: 80px;
@@ -750,9 +754,9 @@ button{
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
-    -webkit-transition: .6s ease;
-    -o-transition: .6s ease;
-    transition: .6s ease;
+    -webkit-transition: 1.2s ease;
+    -o-transition: 1.2s ease;
+    transition: 1.2s ease;
 }
 .programm_block h3.line:after{
     width: 70px;
@@ -814,9 +818,9 @@ button{
     background: #c0a977;
     height: 1px;
     width: 0;
-    -webkit-transition: .6s ease;
-    -o-transition: .6s ease;
-    transition: .6s ease;
+    -webkit-transition: 1.2s ease;
+    -o-transition: 1.2s ease;
+    transition: 1.2s ease;
 }
 .sec-6 h2.line:after{
     width: 230px;
@@ -914,9 +918,9 @@ button{
     bottom: 0;
     left: 0;
     background: #c0a977;
-    -webkit-transition: .6s ease;
-    -o-transition: .6s ease;
-    transition: .6s ease;
+    -webkit-transition: 1.2s ease;
+    -o-transition: 1.2s ease;
+    transition: 1.2s ease;
 }
 .sec-8 h2.line:after{
     width: 70px;
@@ -1454,6 +1458,9 @@ b-reviews-item__video{
     color: #262626;
     line-height: 1.38;
 }
+.sec-2__txt p b{
+    font-weight: 500;
+}
 .sec-2__video{
     float: left;
     width: 60%;
@@ -1658,8 +1665,28 @@ b-reviews-item__video{
     .sec-2 .owl-dots{
         bottom: 45px;
     }
-
-    
+    .sec-2 {
+        padding: 92px 0 0 0;
+    }
+    .b-reviewsl-carousel .owl-nav {
+        right: 0;
+        margin-right: 0;
+    }
+    .owl-item {
+        opacity: 0;
+        -webkit-transition: .3s ease;
+        -o-transition: .3s ease;
+        transition: .3s ease;
+    }
+    .owl-item.active {
+        opacity: 1;
+    }
+    .owl-carousel .owl-stage-outer{
+        overflow: visible;
+    }
+    .sec-5 {
+        padding: 86px 0 112px 0;
+    }
 
 }
 @media screen and (max-width: 1200px){
@@ -1866,27 +1893,22 @@ b-reviews-item__video{
         width: 350px;
         margin: 20px 0 0 0;
     }
-    .owl-item {
-        opacity: 0;
-        -webkit-transition: .3s ease;
-        -o-transition: .3s ease;
-        transition: .3s ease;
+    
+    .card{
+        -webkit-transform: translateX(0) !important;
+        -ms-transform: translateX(0) !important;
+        -o-transform: translateX(0) !important;
+        transform: translateX(0) !important;
     }
-    .owl-item.active {
-        opacity: 1;
+    .card img {
+        filter: blur(0);
     }
-    .owl-carousel .owl-stage-outer{
-        overflow: visible;
+    .card div {
+        color: #000;
+        text-shadow: 0 0 0 #000;
     }
-/*
-    .b-reviewsl-carousel .owl-item.active .b-reviews-text,
-    .b-reviewsl-carousel .owl-item.active .b-reviews-item__cheme,
-    .b-reviewsl-carousel .owl-item.active .b-reviews-item__video{
-        -webkit-animation: none;
-        -o-animation: none;
-        animation: none;
-    }
-*/
+    
+
 }
 
 @media screen and (max-width: 870px){
@@ -1927,6 +1949,7 @@ b-reviews-item__video{
         margin-bottom: 12px;
         padding-bottom: 24px;
         text-shadow: 0 2px 2px rgba(0,0,0,.5);
+        max-width: 275px;
     }
     .main-header:after{
         width: 43px;

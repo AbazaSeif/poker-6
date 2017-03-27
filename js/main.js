@@ -1,30 +1,4 @@
 $(document).ready(function(){
-    /*запуск видео*/
-//    function stopViseo(){
-//        var iframes = $('.video-wrap > iframe[src$="autoplay=1"]'),            
-//            playingSrc = iframes.attr('src');
-//            
-//        if(iframes.length>0){
-//            var stopSrc = playingSrc.replace("autoplay=1", "autoplay=0");
-//            iframes.attr('src' , stopSrc);
-//        }
-//    }
-    
-//    $('.video-wrap').on('click', function(){
-//        var iframe = $(this).find('iframe'),
-//            srcPath = iframe.attr('src'),
-//            srcPlay = srcPath + '?autoplay=1',
-//            img = $(this).find('img');            
-//        
-//        stopViseo();
-//        
-//        iframe.show().attr('src' , srcPlay);
-//        $(this).find('.video-hid').hide();
-//        img.hide();
-//        if($(this).closest('#js-intro-video')){
-//            $(this).closest('#js-intro-video').addClass('shad-container');
-//        }
-//    })
     
     /*валидация на заполнение отправка формы и ответ*/
     $('.js-form-val').on('submit', function(e){
@@ -66,73 +40,11 @@ $(document).ready(function(){
         $(this).closest('.input-wrap').removeClass('error');
     });
     
-    /*открыть отзыв*/
-//    $('.reviws_more').on('click', function(){
-//        var container = $(this).closest('.reviws_textblock'),
-//            wrap = container.find('.reviws_textwrap'),
-//            fullHeight = container.find('.reviws_text').outerHeight(true);
-//        if(container.hasClass('open')){
-//            container.removeClass('open');
-//            wrap.removeAttr('style');            
-//        } else {
-//            container.addClass('open');
-//            wrap.css('height', fullHeight + 'px');
-//        }
-//    });
-//    $('.reviws_slider .slick-slide').on('cssClassChanged', function(){
-//        $(this).find('.reviws_textblock').removeClass('open');
-//        $(this).find('.reviws_textwrap').removeAttr('style');
-//    });
-//    $('.reviws_video-slider').on('click', function(e){
-//        var target = $( e.target );
-//        if( (target.hasClass('slick-arrow')) || (target.is('button')) ){
-//            stopViseo();
-//            $('.reviws_slider').find('.reviws_textblock').removeClass('open');
-//            $('.reviws_slider').find('.reviws_textwrap').removeAttr('style');
-//        }
-//    });
-//    
-//    $('.programm_slider').on('click', function(e){
-//        var target = $( e.target );
-//        if( (target.hasClass('slick-arrow')) || (target.is('button')) ){
-//            stopViseo();
-//        }
-//    });
-//    $('.carusel_item').on('click', function(){
-//        stopViseo();
-//    });
-    
-    
-    
     /*эффекты*/
     $(window).on('scroll',function(){
         var winHeight = $(window).scrollTop(),
-            winBoth = $(window).scrollTop() + $(window).height();        
-
-//        if($('#js-info-list-2').length){            
-//            $('#js-info-list-2 li').each(function(){
-//                if (((winBoth - 100) > ($(this).offset().top)) && ((winHeight + 100) < ($(this).offset().top))){
-//                    $(this).addClass('show-item');
-//                }
-//            });
-//        }
-//        if($("#js-elevator").length){
-//            var elevator = $('#js-elevator').offset().top,
-//                elevatorHeight = $('#js-elevator').height(),
-//                elevatorBoth = elevator + elevatorHeight,
-//                elevatorCont = $('#js-elevator-cont').offset().top,
-//                elevatorContHeight = $('#js-elevator-cont').height(),
-//                elevatorContBoth = elevatorCont + $('#js-elevator-cont').outerHeight(true);
-//            if(winHeight > elevatorCont){ 
-//                $('#js-elevator').addClass('elevator-go');
-//                if(((winHeight - elevatorCont) + 10 + elevatorHeight) <  elevatorContHeight){
-//                    $('#js-elevator').css('top', (winHeight - elevatorCont) + 10 +  'px');
-//                }            
-//            } else{
-//                $('#js-elevator').removeClass('elevator-go').css('top', 0);
-//            } 
-//        } 
-        
+            winBoth = $(window).scrollTop() + $(window).height();
+    
         /*покраснения*/
         function or(orName){
             var orange = $(orName).offset().top;
@@ -288,5 +200,33 @@ $(document).ready(function(){
             stopViseo();
         }
     });
+    
+    /*показ даты*/
+    
+    var Data = new Date(),
+        Month = Data.getMonth(),
+        Day = Data.getDate(),
+        lastDay = Day + 2;
+
+    // Преобразуем месяца
+    switch (Month)
+    {
+      case 0: fMonth="января"; break;
+      case 1: fMonth="февраля"; break;
+      case 2: fMonth="марта"; break;
+      case 3: fMonth="апреля"; break;
+      case 4: fMonth="мае"; break;
+      case 5: fMonth="июня"; break;
+      case 6: fMonth="июля"; break;
+      case 7: fMonth="августа"; break;
+      case 8: fMonth="сентября"; break;
+      case 9: fMonth="октября"; break;
+      case 10: fMonth="ноября"; break;
+      case 11: fMonth="декабря"; break;
+    }
+
+    // Вывод
+    $('#date-container').html(lastDay + " " + fMonth);
+
     
 });
