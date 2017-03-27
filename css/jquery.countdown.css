@@ -1,0 +1,41 @@
+.countdownHolder{
+	width:100%;
+	margin: 0 auto;
+	font: 0px/1 'Bebas Neue Cyrillic',sans-serif;
+	text-align:center;
+}
+.position{
+	display: inline-block;
+	height: 54px;
+	overflow: hidden;
+	position: relative;
+	width: 19px;
+    font-size: 50px;
+}
+.digit {
+    position: absolute;
+    display: block;
+    width: auto;
+    color: #fff;
+    font-size: 50px;
+}
+.countdownHolder > span{
+    margin: 0 4px;
+}
+.countdownHolder > span:first-child{
+    margin-right: 7px;
+}
+.countdown_desc{
+    text-align: center;
+    font-size: 0;
+    line-height: 1.2;
+    color: #333;
+}
+.countdown_desc > div{
+    font-size: 10px;
+    display: inline-block;
+    width: 38px;
+    margin: 0 7px;
+    text-transform: uppercase;
+}
+.countDiv0{ display:none !important; }
