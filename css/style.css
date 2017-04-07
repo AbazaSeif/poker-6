@@ -1336,9 +1336,7 @@ b-reviews-item__video{
 .b-reviews .owl-dot.active{
     background: #fb1f1f;
 }
-.b-reviews .owl-dot:first-child{
-    margin: 0;
-}
+
 .b-more{
     width: 160px;
     height: 35px;
@@ -1419,19 +1417,21 @@ b-reviews-item__video{
     border-radius: 50%;
     
 }
-.owl-dot:first-child {
-    margin: 0;
-}
+
 .owl-dot:hover,
 .owl-dot.active {
     border-color: #c0a977;
     background: #c0a977;
 }
 
+.sec-2 .b-reviews-content{
+    width: 60%;
+    float: right;
+}
 .sec-2__txt{
-    float: left;
     width: 40%;
     padding-right: 60px;
+    float: left;
 }
 .sec-2__slidename{
     padding-bottom: 12px;
@@ -1462,14 +1462,12 @@ b-reviews-item__video{
     font-weight: 500;
 }
 .sec-2__video{
-    float: left;
-    width: 60%;
     max-width: 652px;
 }
 .sec-2 .b-reviews-item {
     max-width: 100%;
 
-}
+}.sec-2 .owl-dots
 .sec-2 .video-wrap{
     position: relative;
 }
@@ -1520,10 +1518,10 @@ b-reviews-item__video{
     display: none;
 }
 .sec-2 .owl-dots{
-    margin-left: 40%;
-    width: 60%;
+
     max-width: 652px;
 }
+
 
 .owl-item.active .sec-2__txt {
     -webkit-animation: flipLeft 1 3s ease-out;
@@ -1641,17 +1639,8 @@ b-reviews-item__video{
         right: 10px;
     }
     
-    .sec-2__txt {
-        width: 50%;
-        padding-right: 30px;
-    }   
-    .sec-2__video {
-        width: 50%;
-    }
-    .sec-2 .owl-dots {
-        margin-left: 50%;
-        width: 50%;
-    }
+
+
     .sec-2 .video-wrap:after{
         max-height: 95%;
     }
@@ -1865,9 +1854,9 @@ b-reviews-item__video{
         float: none;
     }
     .sec-2__video {
-        width: 100%;
+        max-width: 100%;
         float: none;
-        max-width: 610px;
+        width: 610px;
         margin: 0 auto;
     }
     .sec-2 .owl-dots {
@@ -1908,6 +1897,14 @@ b-reviews-item__video{
         text-shadow: 0 0 0 #000;
     }
     
+    .b-reviews-content {
+        width: 100%;
+        float: none;
+    }
+    .sec-2 .b-reviews-content {
+        width: 100%;
+        float: none;
+    }
 
 }
 
@@ -2192,6 +2189,31 @@ b-reviews-item__video{
         font-size: 16px;
         line-height: 20px;
         height: 160px;
+    }
+    
+    .sec-2 .b-reviews-content {
+        width: 100%;
+        float: none;
+    }
+    .sec-7 .owl-dots {
+        
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    .sec-7 .owl-dot{
+        float: none;
+        display: inline-block;
+    }
+    .sec-7 .owl-nav{
+        display: none;
+    }
+    .sec-7 .b-reviews-item__video {
+        margin: 0 auto;
+        float: none;
+    }
+    .b-more{
+        display: none;
     }
 
 }

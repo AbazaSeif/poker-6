@@ -182,7 +182,7 @@ $(document).ready(function(){
         }
     }
     
-    $('.video-blind').on('click', function(){
+    $('.js-video-blind').on('click', function(){
         var container = $(this).closest('.video-wrap'),
             iframe = container.find('iframe'),
             srcPath = iframe.attr('src'),
