@@ -1548,19 +1548,29 @@ b-reviews-item__video{
     line-height: 20px;
     position: relative;
 }
-.check-wrap input{
-    display: none;
+.check-wrap a{
+    color: #999;
+    border-bottom: 1px dashed #999;
 }
-.check-wrap input + .dop{
-    width: 22px;
-    height: 20px;
+.check-wrap a:hover{
+    border-bottom-color: transparent;
+}
+.check-label{
     position: absolute;
     top: 0;
     left: 0;
+}
+.check-label input{
+    display: none;
+}
+.check-label input + .dop{
+    width: 22px;
+    height: 20px;    
     background: url(../images/check.png) 0 0 no-repeat;
     cursor: pointer;
+    display: block;
 }
-.check-wrap input:checked + .dop{
+.check-label input:checked + .dop{
     background-position: 0 -29px;
 }
 .checkbox-txt{
@@ -1568,6 +1578,18 @@ b-reviews-item__video{
     white-space: nowrap;
     font-size: 14px;
     color: #999;
+}
+
+.owl-item .video-blind,
+.owl-item iframe{
+    display: none;
+}
+.owl-item.active .video-blind,
+.owl-item.active iframe{
+    display: block;
+}
+.owl-item .video-blind{
+    z-index: 3;
 }
 
 
