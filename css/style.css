@@ -1540,6 +1540,36 @@ b-reviews-item__video{
     opacity: 1!important;
 }
 
+/*checkbox*/
+.check-wrap{
+    display: block;
+    margin: 0 auto 39px auto;
+    width: 230px;
+    line-height: 20px;
+    position: relative;
+}
+.check-wrap input{
+    display: none;
+}
+.check-wrap input + .dop{
+    width: 22px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/check.png) 0 0 no-repeat;
+    cursor: pointer;
+}
+.check-wrap input:checked + .dop{
+    background-position: 0 -29px;
+}
+.checkbox-txt{
+    padding-left: 30px;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #999;
+}
+
 
 @media screen and (max-width: 1250px){
     .container {
@@ -1919,6 +1949,12 @@ b-reviews-item__video{
         background: url(../images/bg-1.jpg) -550px bottom no-repeat #0c0b08;
         background-size: cover;
     }
+    .form_btn{
+        margin-top: 21px;
+    }
+    .check-wrap{
+        margin-bottom: 21px;
+    }
 }
 @media screen and (max-width: 700px){
     .sec-1_form {
@@ -1958,13 +1994,17 @@ b-reviews-item__video{
     
     .form {
         width: 100%;
-        height: 564px;
+        height: 597px;
         left: 0;
         right: 0;
         background: url(../images/form-mob.jpg) 0 top no-repeat;
         -webkit-background-size: 100% 100%;
         background-size: 100% 100%;
         padding: 0;
+    }
+    .counter {
+        padding-top: 26px;
+        margin-bottom: 25px;
     }
     .form_btn{
         margin: 30px auto 0 auto;
@@ -2116,7 +2156,7 @@ b-reviews-item__video{
         background-size: cover;
     }
     .sec-8_form {
-        top: 92%;
+        top: 85%;
     }
     .sec-8_text {
         padding: 48px 0 0 0;
