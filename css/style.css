@@ -1514,14 +1514,57 @@ b-reviews-item__video{
 .sec-2 .owl-carousel .owl-stage-outer{
     overflow: visible;
 }
-.sec-2 .owl-nav{
-    display: none;
+
+.sec-2 .b-reviewsl-carousel .owl-nav{
+    top: auto;
+    bottom: 14px;  
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 240px;
+    z-index: 5;
 }
 .sec-2 .owl-dots{
 
     max-width: 652px;
 }
-
+.sec-2 .owl-carousel .owl-nav .owl-next{
+    width: 16px;
+    height: 27px;
+    background: url(../images/arrowses.png) -16px -27px no-repeat;
+    border: none;
+    position: absolute;
+    right: 0;
+}
+.sec-2 .owl-carousel .owl-nav .owl-prev{
+    width: 16px;
+    height: 27px;
+    background: url(../images/arrowses.png) 0 -27px no-repeat;
+    border: none;
+    position: absolute;
+    left: 0;
+}
+.sec-2 .owl-carousel .owl-nav .owl-next:hover{
+    background-position: -16px 0;
+}
+.sec-2 .owl-carousel .owl-nav .owl-prev:hover{
+    background-position: 0 0;
+}
+.sec-2 .owl-dot{
+    width: 40px;
+    height: 5px;
+    border: none;
+    border-radius: 0;
+    background: #e5e5e5;
+    margin: 0 10px;
+}
+.owl-dot:hover, .owl-dot.active{
+    background: #cc0000;
+}
 
 .owl-item.active .sec-2__txt {
     -webkit-animation: flipLeft 1 3s ease-out;
@@ -1727,6 +1770,9 @@ b-reviews-item__video{
     }
     .sec-5 {
         padding: 86px 0 112px 0;
+    }
+    .sec-2 .b-reviewsl-carousel .owl-nav{
+        bottom: 60px;
     }
 
 }
@@ -2276,6 +2322,9 @@ b-reviews-item__video{
     }
     .b-more{
         display: none;
+    }
+    .sec-2 .b-reviewsl-carousel .owl-nav {
+        bottom: 45px;
     }
 
 }
